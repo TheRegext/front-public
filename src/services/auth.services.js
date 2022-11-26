@@ -1,5 +1,5 @@
 async function login(email, password) {
-    return fetch('http://localhost:2022/api/users/login', {
+    return fetch('https://back-public.vercel.app/api/users/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -18,7 +18,7 @@ async function login(email, password) {
 
 // Path: src\components\login\login.component.js
 async function logout() {
-    return fetch('http://localhost:2022/api/users/logout', {
+    return fetch('https://back-public.vercel.app/api/users/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

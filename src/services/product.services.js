@@ -1,5 +1,5 @@
 async function find() {
-    return fetch('http://localhost:2022/api/productos', {
+    return fetch('https://back-public.vercel.app/api/productos', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -17,7 +17,7 @@ async function find() {
 }
 
 async function findById(id) {
-    return fetch(`http://localhost:2022/api/productos/${id}`, {
+    return fetch(`https://back-public.vercel.app/api/productos/${id}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ async function findById(id) {
 }
 
 async function create(product) {
-    return fetch('http://localhost:2022/api/productos', {
+    return fetch('https://back-public.vercel.app/api/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

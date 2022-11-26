@@ -1,5 +1,5 @@
 async function find() {
-    return fetch('http://localhost:2022/api/categorias')
+    return fetch('https://back-public.vercel.app/api/categorias')
         .then(response => response.json())
 }
 
