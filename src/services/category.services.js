@@ -1,5 +1,5 @@
 async function find() {
-    return fetch('https://back-public.vercel.app/api/categorias')
+    return fetch('https://backend-zeta-ebon.vercel.app/api/categorias')
         .then(response => response.json())
 }
 
